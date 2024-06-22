@@ -48,7 +48,7 @@ with open(filename.rsplit('.', 1)[0] + '.html', 'w') as f:
                         f.write(f'<p>{line}</p>')
                 case '* ':
                     ln = line.split(' ', 1)
-                    f.write(f'<li>•\n{ln[1]}</li>')
+                    f.write(f'<li>{ln[1]}</li>')
                 case other:
                     if not line == '\n':
                         f.write(f'<p>{line}</p>')
